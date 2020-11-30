@@ -4,30 +4,21 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Library Management System</title>
+<title>Survey Management System</title>
 </head>
 <body>
-<h1>Add a new Book </h1>
-<form action="AddServlet" method="post">
+<h1>Admin Login</h1>
+<form action="AdminLogin" method="post">
 			<table style="with: 50%">
 				<tr>
-					<td>Book Id</td>
-					<td><input type="text" name="book_id" /></td>
+					<td>Username</td>
+					<td><input type="text" name="user_name" /></td>
 				</tr>
 				<tr>
-					<td>Book's Title</td>
-					<td><input type="text" name="title" /></td>
+					<td>Password</td>
+					<td><input type="text" name="pwd" /></td>
 				</tr>
-				<tr>
-					<td>Book's Category</td>
-					<td><input type="text" name="category" /></td>
-				</tr>
-					<tr>
-					<td>Book's Author</td>
-					<td><input type="text" name="author" /></td>
-				</tr>
-
 			</table>
-			<input type="submit" value="Submit" /></form>
+			<input type="submit" value="Login" /></form>
 </body>
 </html>

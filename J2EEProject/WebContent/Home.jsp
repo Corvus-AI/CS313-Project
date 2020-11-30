@@ -7,7 +7,7 @@
 <title>Library Management System</title>
 </head>
 <body>
-<p align="center"> <h1>Survey Management System</h1> </p>
+<p> <h1>Survey Management System</h1> </p>
 <a href="AdminLogin.jsp">
 <button>Admin Login</button>
 </a>

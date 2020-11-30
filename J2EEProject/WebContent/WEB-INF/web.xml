@@ -22,11 +22,11 @@
  <servlet-class>IssueServlet</servlet-class>
  </servlet>
  <servlet-mapping>
- <servlet-name>AddServlet</servlet-name>
- <url-pattern>/AddServlet</url-pattern>
+ <servlet-name>AdminLogin</servlet-name>
+ <url-pattern>/AdminLogin</url-pattern>
  </servlet-mapping>
   <servlet-mapping>
- <servlet-name>IssueServlet</servlet-name>
- <url-pattern>/IssueServlet</url-pattern>
+ <servlet-name>UserLogin</servlet-name>
+ <url-pattern>/UserLogin</url-pattern>
  </servlet-mapping>
 </web-app>

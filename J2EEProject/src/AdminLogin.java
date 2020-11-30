@@ -16,10 +16,10 @@ import java.sql.PreparedStatement;
  * Servlet implementation class AddServlet
  */
 @WebServlet("/AddServlet")
-public class AddServlet extends HttpServlet {
+public class AdminLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
    
-    public AddServlet() {
+    public AdminLogin() {
         super();
         // TODO Auto-generated constructor stub
     }

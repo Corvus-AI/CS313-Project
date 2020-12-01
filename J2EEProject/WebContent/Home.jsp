@@ -32,7 +32,7 @@
 <button>Admin Login</button>
 </a>
 &emsp;
-<a href="UserLogin.jsp">
+<a href="VoterLogin.jsp">
 <button>User Login</button>
 </a>
 </p>

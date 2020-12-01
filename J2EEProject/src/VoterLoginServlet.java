@@ -1,6 +1,3 @@
-
-
-
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -12,14 +9,11 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
-/**
- * Servlet implementation class AddServlet
- */
-@WebServlet("/AddServlet")
-public class UserLogin extends HttpServlet {
+@WebServlet("/VoterLoginServlet")
+public class VoterLoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
    
-    public UserLogin() {
+    public VoterLoginServlet() {
         super();
         // TODO Auto-generated constructor stub
     }

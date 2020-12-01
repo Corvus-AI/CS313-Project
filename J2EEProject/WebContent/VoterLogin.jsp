@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>User Login</h1>
-<form action="UserLogin" method="post">
+<form action="VoterLoginServlet" method="post">
 			<table style="with: 50%">
 				<tr>
 					<td>Username</td>
@@ -19,6 +19,7 @@
 					<td><input type="password" name="pwd" /></td>
 				</tr>
 			</table>
+		
 			<input type="submit" value="Login" /></form>
 </body>
 </html>

@@ -15,11 +15,11 @@ import java.sql.PreparedStatement;
 /**
  * Servlet implementation class AddServlet
  */
-@WebServlet("/AddServlet")
-public class AdminLogin extends HttpServlet {
+@WebServlet("/VoterRegisterServlet")
+public class VoterRegisterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
    
-    public AdminLogin() {
+    public VoterRegisterServlet() {
         super();
         // TODO Auto-generated constructor stub
     }

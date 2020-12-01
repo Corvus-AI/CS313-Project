@@ -7,19 +7,26 @@
 <title>Survey Management System</title>
 </head>
 <body>
-<h1>Admin Login</h1>
-<form action="AdminLoginServlet" method="post">
+<h1>Voter Register</h1>
+<form action="VoterRegisterServlet" method="post">
 			<table style="with: 50%">
 				<tr>
-					<td>Username</td>
-					<td><input type="text" name="user_name" /></td>
+					<td>Voter ID</td>
+					<td><input type="text" name="voter_id" /></td>
+				</tr>
+				<tr>
+					<td>Voter Name</td>
+					<td><input type="text" name="vname" /></td>
 				</tr>
 				<tr>
 					<td>Password</td>
-					<td><input type="password" name="pwd" /></td>
+					<td><input type="password" name="password" /></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="text" name="email" /></td>
 				</tr>
 			</table>
-			
-			<input type="submit" value="Login" /></form>
+			<input type="submit" value="Register" /></form>
 </body>
 </html>

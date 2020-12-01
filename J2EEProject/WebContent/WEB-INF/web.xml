@@ -9,24 +9,40 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>Home.jsp</welcome-file>
   </welcome-file-list>
-  <servlet>
- <description></description>
- <display-name>AddServlet</display-name>
- <servlet-name>AddServlet</servlet-name>
- <servlet-class>AddServlet</servlet-class>
- </servlet>
+  
  <servlet>
  <description></description>
- <display-name>IssueServlet</display-name>
- <servlet-name>IssueServlet</servlet-name>
- <servlet-class>IssueServlet</servlet-class>
+ <display-name>AdminLoginServlet</display-name>
+ <servlet-name>AdminLoginServlet</servlet-name>
+ <servlet-class>AdminLoginServlet</servlet-class>
  </servlet>
+ 
+ <servlet>
+ <description></description>
+ <display-name>VoterLoginServlet</display-name>
+ <servlet-name>VoterLoginServlet</servlet-name>
+ <servlet-class>VoterLoginServlet</servlet-class>
+ </servlet>
+ 
+ <servlet>
+ <description></description>
+ <display-name>VoterRegisterServlet</display-name>
+ <servlet-name>VoterRegisterServlet</servlet-name>
+ <servlet-class>VoterRegisterServlet</servlet-class>
+ </servlet>
+
  <servlet-mapping>
- <servlet-name>AdminLogin</servlet-name>
- <url-pattern>/AdminLogin</url-pattern>
+ <servlet-name>AdminLoginServlet</servlet-name>
+ <url-pattern>/AdminLoginServlet</url-pattern>
  </servlet-mapping>
+ 
   <servlet-mapping>
- <servlet-name>UserLogin</servlet-name>
- <url-pattern>/UserLogin</url-pattern>
+ <servlet-name>VoterLoginServlet</servlet-name>
+ <url-pattern>/VoterLoginServlet</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet-mapping>
+ <servlet-name>VoterRegisterServlet</servlet-name>
+ <url-pattern>/VoterRegisterServlet</url-pattern>
  </servlet-mapping>
 </web-app>

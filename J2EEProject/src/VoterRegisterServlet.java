@@ -1,6 +1,3 @@
-
-
-
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -12,9 +9,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
-/**
- * Servlet implementation class AddServlet
- */
 @WebServlet("/VoterRegisterServlet")
 public class VoterRegisterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -28,34 +22,38 @@ public class VoterRegisterServlet extends HttpServlet {
 		{
 	
 		//getting input values from jsp page
-		String book_id = request.getParameter("book_id");
-		String title = request.getParameter("title");
-		String category = request.getParameter("category");
-		String author = request.getParameter("author");
+		String voter_id = request.getParameter("voter_id");
+		String vname = request.getParameter("vname");
+		String password = request.getParameter("password");  
+		String email = request.getParameter("email");
 
 
 		Connection con = null;
- 		String url = "jdbc:postgresql://localhost:5432/lms"; //PostgreSQL URL and followed by the database name
+ 		String url = "jdbc:postgresql://localhost:5432/survey"; //PostgreSQL URL and followed by the database name
  		String username = "postgres"; //PostgreSQL username
- 		String password = "1234"; //PostgreSQL password
+ 		String password1 = "1234"; //PostgreSQL password
 		
 		Class.forName("org.postgresql.Driver");
-		con = DriverManager.getConnection(url, username, password); //attempting to connect to PostgreSQL database
+		con = DriverManager.getConnection(url, username, password1); //attempting to connect to PostgreSQL database
  		System.out.println("Printing connection object "+con);
 
 		//Prepared Statement to add student data
-		PreparedStatement st = con.prepareStatement("insert into book values(?, ?,?,?)");
- 		st.setString(1,book_id);
-		st.setString(2,title);
-		st.setString(3,category);
-		st.setString(4,author);
+		PreparedStatement st = con.prepareStatement("insert into voter values(?, ?,?,?)");
+ 		st.setString(1,voter_id);
+		st.setString(2,vname);
+		st.setString(3,password);
+		st.setString(4,email);
 		int result=st.executeUpdate();
 
 		//Checks if insert is successful.If yes,then redirects to Result.jsp page 
 		if(result>0)
 		{
 			
-			RequestDispatcher rd = request.getRequestDispatcher("AddResult.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("VoterAdded.jsp");
+			rd.forward(request, response);
+		}
+		else {
+			RequestDispatcher rd = request.getRequestDispatcher("LoginFail.jsp");
 			rd.forward(request, response);
 		}
 
@@ -63,6 +61,7 @@ public class VoterRegisterServlet extends HttpServlet {
 		 catch (Exception e) 
  		{
  			e.printStackTrace();
+ 			
  		}
 
 	

@@ -7,12 +7,28 @@
 <title>Library Management System</title>
 </head>
 <body>
-<p> <h1>Survey Management System</h1> </p>
+
+<p style="text-align:center"> <h1>Survey Management System</h1> </p>
+&nbsp;
+&nbsp;
+&nbsp;
+
+<p style="text-align:center">
+<a href="VoterRegister.jsp">
+<button>Register Voter</button>
+</a>
+</p>
+&nbsp;
+
+<p style="text-align:center">
 <a href="AdminLogin.jsp">
 <button>Admin Login</button>
 </a>
+
 <a href="UserLogin.jsp">
 <button>User Login</button>
 </a>
+</p>
+
 </body>
 </html>

@@ -5,14 +5,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>All Surveys</title>
+<title>Admin : All Survey Data</title>
 </head>
 <body>
-<h3>List of All Surveys</h3>
+
 <% 
    Connection con = null;
    ResultSet rs = null;
-   
+  
 
 		String url = "jdbc:postgresql://localhost:5432/survey"; //PostgreSQL URL and followed by the database name
 		String username = "postgres"; //PostgreSQL username
@@ -22,13 +22,13 @@
 		con = DriverManager.getConnection(url, username, password1); //attempting to connect to PostgreSQL database
 		
        Statement stmt = con.createStatement();
-       rs = stmt.executeQuery("select sname from survey");
-       int i = 1 ;
+       rs = stmt.executeQuery("select * from data order by v_name,s_name");
        while (rs.next()) {
-    	out.print(i+". ") ;
-        out.println(rs.getString("sname")) ;
+    	out.println(rs.getString("v_name")) ;
+        out.println(rs.getString("s_name")) ;
+        out.println(rs.getString("option")) ;
         out.print("<br/>") ;
-        i++ ;
+   
        }
 
 %>

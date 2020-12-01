@@ -30,6 +30,13 @@
  <servlet-name>VoterRegisterServlet</servlet-name>
  <servlet-class>VoterRegisterServlet</servlet-class>
  </servlet>
+ 
+ <servlet>
+ <description></description>
+ <display-name>AddSurveyServlet</display-name>
+ <servlet-name>AddSurveyServlet</servlet-name>
+ <servlet-class>AddSurveyServlet</servlet-class>
+ </servlet>
 
  <servlet-mapping>
  <servlet-name>AdminLoginServlet</servlet-name>
@@ -44,5 +51,10 @@
   <servlet-mapping>
  <servlet-name>VoterRegisterServlet</servlet-name>
  <url-pattern>/VoterRegisterServlet</url-pattern>
+ </servlet-mapping>
+ 
+   <servlet-mapping>
+ <servlet-name>AddSurveyServlet</servlet-name>
+ <url-pattern>/AddSurveyServlet</url-pattern>
  </servlet-mapping>
 </web-app>

@@ -14,17 +14,7 @@
 <body>
 
 <h1> <p style="text-align:center"> Welcome ! </p> </h1>
-<p style="text-align:center"> Choose one of the buttons to proceed </p>
 
-&nbsp;
-&nbsp;
-&nbsp;
-
-<p style="text-align:center">
-<a href="VoterRegister.jsp">
-<button>Register Voter</button>
-</a>
-</p>
 &nbsp;
 
 <p style="text-align:center">
@@ -34,6 +24,18 @@
 &emsp;
 <a href="VoterLogin.jsp">
 <button>Voter Login</button>
+</a>
+</p>
+
+<p style="text-align:center"> Choose one of the buttons to proceed </p>
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+<p style="text-align:center">
+<a href="VoterRegister.jsp">
+<button>Register Voter</button>
 </a>
 </p>
 

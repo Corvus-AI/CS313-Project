@@ -33,7 +33,7 @@
 </a>
 &emsp;
 <a href="VoterLogin.jsp">
-<button>User Login</button>
+<button>Voter Login</button>
 </a>
 </p>
 

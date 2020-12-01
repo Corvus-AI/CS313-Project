@@ -38,6 +38,13 @@
  <servlet-class>AddSurveyServlet</servlet-class>
  </servlet>
 
+ <servlet>
+ <description></description>
+ <display-name>RemoveSurveyServlet</display-name>
+ <servlet-name>RemoveSurveyServlet</servlet-name>
+ <servlet-class>RemoveSurveyServlet</servlet-class>
+ </servlet>
+ 
  <servlet-mapping>
  <servlet-name>AdminLoginServlet</servlet-name>
  <url-pattern>/AdminLoginServlet</url-pattern>
@@ -57,4 +64,10 @@
  <servlet-name>AddSurveyServlet</servlet-name>
  <url-pattern>/AddSurveyServlet</url-pattern>
  </servlet-mapping>
+ 
+  <servlet-mapping>
+ <servlet-name>RemoveSurveyServlet</servlet-name>
+ <url-pattern>/RemoveSurveyServlet</url-pattern>
+ </servlet-mapping>
+ 
 </web-app>

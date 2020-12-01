@@ -7,6 +7,6 @@
 <title>Failed !</title>
 </head>
 <body>
-Add Survey Failed , Try Again with correct information
+Changing Survey Info Failed , Try Again with correct information
 </body>
 </html>

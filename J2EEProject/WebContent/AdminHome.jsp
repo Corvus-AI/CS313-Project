@@ -17,6 +17,12 @@ function redirect2(elem){
     elem.submit();
 }
 
+function redirect3(elem){
+    elem.setAttribute("action","RemoveSurvey.jsp");
+    elem.submit();
+}
+
+
 </script>
 </head>
 <body>
@@ -28,6 +34,11 @@ function redirect2(elem){
 &nbsp;
 <form id="main" method="post" name="main" action="" onsubmit="redirect2(this);">
     <input type="submit" value="Add a new Survey"/> 
+</form>
+
+&nbsp;
+<form id="main" method="post" name="main" action="" onsubmit="redirect3(this);">
+    <input type="submit" value="Remove a existing Survey"/> 
 </form>
 
 </body>

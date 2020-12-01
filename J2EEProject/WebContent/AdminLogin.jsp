@@ -11,12 +11,12 @@
 <form action="AdminLoginServlet" method="post">
 			<table style="with: 50%">
 				<tr>
-					<td>Username</td>
-					<td><input type="text" name="user_name" /></td>
+					<td>Admin ID</td>
+					<td><input type="text" name="admin_id" /></td>
 				</tr>
 				<tr>
 					<td>Password</td>
-					<td><input type="password" name="pwd" /></td>
+					<td><input type="password" name="password" /></td>
 				</tr>
 			</table>
 			

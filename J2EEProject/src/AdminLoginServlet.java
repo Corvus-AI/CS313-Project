@@ -21,7 +21,7 @@ public class AdminLoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try
 		{
-	
+		
 		//getting input values from jsp page
 		String admin_id = request.getParameter("admin_id");
 		String password = request.getParameter("password");

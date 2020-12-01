@@ -15,6 +15,8 @@
 
 <h1> <p style="text-align:center"> Welcome ! </p> </h1>
 
+<p style="text-align:center"> Choose one of the buttons to proceed </p>
+
 &nbsp;
 
 <p style="text-align:center">
@@ -27,7 +29,6 @@
 </a>
 </p>
 
-<p style="text-align:center"> Choose one of the buttons to proceed </p>
 
 &nbsp;
 &nbsp;

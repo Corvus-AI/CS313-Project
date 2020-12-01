@@ -10,6 +10,9 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+
+import Voter.Voter ;
+
 @WebServlet("/VoterLoginServlet")
 public class VoterLoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -25,6 +28,9 @@ public class VoterLoginServlet extends HttpServlet {
 			//getting input values from jsp page
 			String voter_id = request.getParameter("voter_id");
 			String password = request.getParameter("password");
+			
+			
+			Voter.setID(voter_id) ;
 
 
 			Connection con = null;

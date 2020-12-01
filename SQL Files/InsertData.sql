@@ -19,12 +19,12 @@ insert into survey values ('S0002' , 'Online Sem', ' Question2 with options 1-4'
 insert into survey values ('S0003' , 'Online Sem', ' Question3 with options 1-4' );
 
 
-insert into data values ('V0001' , 'S0001' , 1 ) ;
-insert into data values ('V0001' , 'S0002' , 1 ) ;
-insert into data values ('V0001' , 'S0003' , 2 ) ;
-insert into data values ('V0004' , 'S0002' , 1 ) ;
-insert into data values ('V0004' , 'S0001' , 3 ) ;
-insert into data values ('V0002' , 'S0001' , 2 ) ;
-insert into data values ('V0009' , 'S0002' , 2 ) ;
-insert into data values ('V0007' , 'S0003' , 4 ) ;
-insert into data values ('V0008' , 'S0001' , 4 ) ;
+insert into data values ('V0001' , 'S0001' , '1' ) ;
+insert into data values ('V0001' , 'S0002' , '1' ) ;
+insert into data values ('V0001' , 'S0003' , '2' ) ;
+insert into data values ('V0004' , 'S0002' , '1' ) ;
+insert into data values ('V0004' , 'S0001' , '3' ) ;
+insert into data values ('V0002' , 'S0001' , '2' ) ;
+insert into data values ('V0009' , 'S0002' ,'2' ) ;
+insert into data values ('V0007' , 'S0003' , '4' ) ;
+insert into data values ('V0008' , 'S0001' , '4' ) ;

@@ -19,6 +19,6 @@ CREATE TABLE survey (
 CREATE TABLE data (
     v_name VARCHAR(5) ,
     s_name VARCHAR(5) ,
-    option INT ,
+    option VARCHAR(50) ,
     PRIMARY KEY (v_name , s_name)
 );

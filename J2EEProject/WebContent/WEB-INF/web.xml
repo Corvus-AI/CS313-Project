@@ -45,6 +45,20 @@
  <servlet-class>RemoveSurveyServlet</servlet-class>
  </servlet>
  
+  <servlet>
+ <description></description>
+ <display-name>VoterServlet</display-name>
+ <servlet-name>VoterServlet</servlet-name>
+ <servlet-class>VoterServlet</servlet-class>
+ </servlet>
+ 
+   <servlet>
+ <description></description>
+ <display-name>AddVoteServlet</display-name>
+ <servlet-name>AddVoteServlet</servlet-name>
+ <servlet-class>AddVoteServlet</servlet-class>
+ </servlet>
+ 
  <servlet-mapping>
  <servlet-name>AdminLoginServlet</servlet-name>
  <url-pattern>/AdminLoginServlet</url-pattern>
@@ -68,6 +82,16 @@
   <servlet-mapping>
  <servlet-name>RemoveSurveyServlet</servlet-name>
  <url-pattern>/RemoveSurveyServlet</url-pattern>
+ </servlet-mapping>
+ 
+   <servlet-mapping>
+ <servlet-name>VoterServlet</servlet-name>
+ <url-pattern>/VoterServlet</url-pattern>
+ </servlet-mapping>
+ 
+    <servlet-mapping>
+ <servlet-name>AddVoteServlet</servlet-name>
+ <url-pattern>/AddVoteServlet</url-pattern>
  </servlet-mapping>
  
 </web-app>

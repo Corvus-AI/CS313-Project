@@ -6,10 +6,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Voter : Vote for Survey</title>
+<title>Voter : Vote </title>
 </head>
 <body>
-<h3>All Surveys you can Vote for :</h3>
+<h3>Survey Description</h3>&nbsp;
 <% 
    Connection con = null;
    ResultSet rs = null;
@@ -22,28 +22,24 @@
 		con = DriverManager.getConnection(url, username, password1); //attempting to connect to PostgreSQL database
 
 	
-       PreparedStatement st = con.prepareStatement("select survey_id , sname from survey where survey_id not in (select s_name from data where v_name='" + Voter.ID + "')" );
-       
+       PreparedStatement st = con.prepareStatement("select description from survey where survey_id='" + Voter.Survey + "'" );
        rs=st.executeQuery();
-
-       while (rs.next()) {
-    	out.print(rs.getString("survey_id") + "  ") ;
-        out.println(rs.getString("sname")) ;
+       rs.next();
+       
+        out.println(rs.getString("description")) ;
         out.print("<br/>") ;
-       }
+    
 
 %>
-
-<form action="VoterServlet" method="post">
+<form action="AddVoteServlet" method="post">
 			<table style="with: 50%">
 				<tr>
-					<td>Enter Survey ID</td>
-					<td><input type="text" name="survey_id" /></td>
+					<td>Enter your Response :</td>
+					<td><input type="text" name="option" /></td>
 				</tr>
 			</table>
-			<input type="submit" value="Choose Survey" />
+			<input type="submit" value="Vote" />
 </form>
-			
-			
+		
 </body>
 </html>

@@ -27,6 +27,15 @@ function redirect4(elem){
     elem.submit();
 }
 
+function redirect5(elem){
+    elem.setAttribute("action","Home.jsp");
+    elem.submit();
+}
+
+function redirect6(elem){
+    elem.setAttribute("action","SurveyStats.jsp");
+    elem.submit();
+}
 
 </script>
 </head>
@@ -48,7 +57,18 @@ function redirect4(elem){
 
 &nbsp;
 <form id="main" method="post" name="main" action="" onsubmit="redirect4(this);">
-    <input type="submit" value="Check Survey Results"/> 
+    <input type="submit" value="Check All Survey Results"/> 
+</form>
+
+&nbsp;
+<form id="main" method="post" name="main" action="" onsubmit="redirect6(this);">
+    <input type="submit" value="Check All Survey Statistics"/> 
+</form>
+
+
+&nbsp;
+<form id="main" method="post" name="main" action="" onsubmit="redirect5(this);">
+    <input type="submit" value="Logout"/> 
 </form>
 </body>
 </html>

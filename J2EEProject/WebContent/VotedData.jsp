@@ -5,7 +5,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Admin : All Survey Data</title>
+<title>Voter : Voted Survey Data</title>
+<jsp:useBean id="Voter" class="Voter.Voter" scope="session"/> 
 </head>
 <body>
 
@@ -22,15 +23,12 @@
 		con = DriverManager.getConnection(url, username, password1); //attempting to connect to PostgreSQL database
 		
        Statement stmt = con.createStatement();
-		
-       out.println("Voter&emsp;Survey&emsp;Data") ;
+       rs = stmt.executeQuery("select * from data where v_name ='" + Voter.ID + "' order by s_name" );
+       out.println("Survey Vote") ;
        out.print("<br/><br/> ") ;
-       
-       rs = stmt.executeQuery("select * from data order by v_name,s_name");
        while (rs.next()) {
-    	out.println(rs.getString("v_name")) ; out.println("&emsp;");
-        out.println(rs.getString("s_name")) ;out.println("&emsp;");
-        out.println(rs.getString("option")) ;out.println("&emsp;");
+        out.println(rs.getString("s_name")) ; out.println("&emsp;");
+        out.println(rs.getString("option")) ;
         out.print("<br/>") ;
    
        }

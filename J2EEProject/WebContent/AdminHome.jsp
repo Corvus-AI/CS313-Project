@@ -40,7 +40,8 @@ function redirect6(elem){
 </script>
 </head>
 <body>
-
+<h1> <p style="text-align:center"> Admin DashBoard </p> </h1>
+<div id="form-wrapper" style="max-width:500px;margin:auto;">
 &nbsp;
 <form id="main" method="post" name="main" action="" onsubmit="redirect1(this);">
     <input type="submit" value="View Existing Surveys"/> 
@@ -70,5 +71,6 @@ function redirect6(elem){
 <form id="main" method="post" name="main" action="" onsubmit="redirect5(this);">
     <input type="submit" value="Logout"/> 
 </form>
+</div>
 </body>
 </html>

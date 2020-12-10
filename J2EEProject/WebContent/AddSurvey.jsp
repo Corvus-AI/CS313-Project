@@ -7,7 +7,8 @@
 <title>Admin : Add New Survey</title>
 </head>
 <body>
-<h3>Enter new Survey Details</h3>
+<h3><p style="text-align:center">Enter new Survey Details</p></h3>
+<div id="form-wrapper" style="max-width:500px;margin:auto;">
 <form action="AddSurveyServlet" method="post">
 			<table style="with: 50%">
 				<tr>
@@ -24,5 +25,6 @@
 				</tr>
 			</table>
 			<input type="submit" value="Add Survey" /></form>
+			</div>
 </body>
 </html>

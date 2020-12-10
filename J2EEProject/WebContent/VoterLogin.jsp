@@ -7,7 +7,8 @@
 <title>Survey Management System</title>
 </head>
 <body>
-<h1>Voter Login</h1>
+<h1><p style="text-align:center">Voter Login</p></h1>
+<div id="form-wrapper" style="max-width:500px;margin:auto;">
 <form action="VoterLoginServlet" method="post">
 			<table style="with: 50%">
 				<tr>
@@ -20,6 +21,6 @@
 				</tr>
 			</table>
 			
-			<input type="submit" value="Login" /></form>
+			<input type="submit" value="Login" /></form></div>
 </body>
 </html>
